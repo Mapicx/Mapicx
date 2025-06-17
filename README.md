@@ -83,10 +83,31 @@ model.add(128, 10, activation='Softmax')
 
 | Dataset          | Model Architecture | Accuracy | Training Time | Loss Function       | Optimizer            |
 |------------------|--------------------|----------|---------------|---------------------|----------------------|
-| Spiral (3-class) | 2-512-512-3        | 98.7%    | 15.2s         | Categorical Crossentropy | SGD (momentum=0.9) |
+| Spiral (3-class) | 2-512-512-3        | 96.7%    | 15.2s         | Categorical Crossentropy | SGD (momentum=0.9) |
 | Linear Data      | 2-64-2             | 99.5%    | 8.7s          | Categorical Crossentropy | SGD (decay=1e-4)    |
-| Non-Linear XOR   | 2-16-16-2          | 99.2%    | 22.5s         | Binary Crossentropy | SGD (momentum=0.85) |
-| Circles Dataset  | 2-128-128-2        | 99.8%    | 18.3s         | Binary Crossentropy | SGD (decay=5e-4)    |
+| Non-Linear XOR   | 2-16-16-2          | 97.2%    | 22.5s         | Binary Crossentropy | SGD (momentum=0.85) |
+| Circles Dataset  | 2-128-128-2        | 92.8%    | 18.3s         | Binary Crossentropy | SGD (decay=5e-4)    |
+
+Mapicx/                      # Root directory
+│
+├── Mapicx/                  # Core package
+│   ├── __init__.py          # Package initialization
+│   ├── layer.py             # Dense, Dropout layers
+│   ├── interface.py         # NeuralNetwork class
+│   ├── Activation_function.py # ReLU, Softmax
+│   ├── Loss_function.py     # Categorical Crossentropy
+│   ├── optimizers.py        # SGD optimizer
+│   ├── Data.py              # Dataset loader
+│   └── mapicx.py            # High-level API
+|   └── visualization.py     # Result plotting
+│
+│
+├── .gitignore               # Ignore patterns
+├── LICENSE                  # MIT License
+├── README.md                # Project documentation
+├── requirements.txt         # Dependencies
+├── setup.py                 # Installation script
+└── pyproject.toml           # Build configuration
 
 ## Documentation
 Explore the full documentation at mapicx.readthedocs.io
