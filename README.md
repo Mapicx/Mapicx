@@ -81,6 +81,13 @@ model.add(128, 10, activation='Softmax')
   Binary Crossentropy (Upcoming)
   MSE (Upcoming)
 
+| Dataset          | Model Architecture | Accuracy | Training Time | Loss Function       | Optimizer            |
+|------------------|--------------------|----------|---------------|---------------------|----------------------|
+| Spiral (3-class) | 2-512-512-3        | 98.7%    | 15.2s         | Categorical Crossentropy | SGD (momentum=0.9) |
+| Linear Data      | 2-64-2             | 99.5%    | 8.7s          | Categorical Crossentropy | SGD (decay=1e-4)    |
+| Non-Linear XOR   | 2-16-16-2          | 99.2%    | 22.5s         | Binary Crossentropy | SGD (momentum=0.85) |
+| Circles Dataset  | 2-128-128-2        | 99.8%    | 18.3s         | Binary Crossentropy | SGD (decay=5e-4)    |
+
 ## Documentation
 Explore the full documentation at mapicx.readthedocs.io
 
