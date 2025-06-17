@@ -88,6 +88,7 @@ model.add(128, 10, activation='Softmax')
 | Non-Linear XOR   | 2-16-16-2          | 97.2%    | 22.5s         | Binary Crossentropy | SGD (momentum=0.85) |
 | Circles Dataset  | 2-128-128-2        | 92.8%    | 18.3s         | Binary Crossentropy | SGD (decay=5e-4)    |
 
+<pre> ```
 Mapicx/                      # Root directory
 │
 ├── Mapicx/                  # Core package
@@ -108,7 +109,8 @@ Mapicx/                      # Root directory
 ├── requirements.txt         # Dependencies
 ├── setup.py                 # Installation script
 └── pyproject.toml           # Build configuration
-
+``` </pre>
+  
 ## Documentation
 Explore the full documentation at mapicx.readthedocs.io
 
