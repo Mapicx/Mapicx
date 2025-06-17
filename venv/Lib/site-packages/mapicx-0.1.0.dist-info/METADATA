@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: Mapicx
+Version: 0.1.0
+Summary: A lightweight ANN library from scratch using NumPy
+Author: Manas Pathak
+Author-email: manaspathak1711@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: nnfs
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
