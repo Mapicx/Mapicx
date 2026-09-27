@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 150" width="1000" height="150" role="img" aria-label="footer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e0a24"/><stop offset="1" stop-color="#140b2e"/></linearGradient>
+    <radialGradient id="mP" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff5c9d" stop-opacity="0.4"/><stop offset="1" stop-color="#ff5c9d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect"><stop offset="0" stop-color="#5eead4"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f9a8d4"/><animateTransform attributeName="gradientTransform" type="translate" values="0 0; 1 0; 0 0" dur="9s" repeatCount="indefinite"/></linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="45"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.9 0.9 0.9 0 0"/></filter>
+    <style>.sans{font-family:'Poppins','Segoe UI',ui-sans-serif,system-ui,sans-serif;} .mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;}</style>
+  </defs>
+  <rect width="1000" height="150" fill="url(#bg)"/>
+  <g filter="url(#blur)"><ellipse cx="500" cy="150" rx="360" ry="120" fill="url(#mP)"/></g>
+  <text x="500" y="66" text-anchor="middle" class="sans" font-size="28" font-weight="700" fill="url(#flow)">Thanks for scrolling — let&#8217;s build something.</text>
+  <text x="500" y="98" text-anchor="middle" class="mono" font-size="13" letter-spacing="2" fill="#9089c0">open to collaboration &#183; AI / open-source &#183; 250+ DSA solved</text>
+  <rect width="1000" height="150" filter="url(#grain)" opacity="0.06"/>
+</svg>

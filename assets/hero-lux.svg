@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="Manas Pathak — ML / AI Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e0a24"/><stop offset="0.5" stop-color="#140b2e"/><stop offset="1" stop-color="#0b1030"/>
+    </linearGradient>
+    <radialGradient id="mI" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#6d5cff" stop-opacity="0.75"/><stop offset="1" stop-color="#6d5cff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="mP" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff5c9d" stop-opacity="0.65"/><stop offset="1" stop-color="#ff5c9d" stop-opacity="0"/></radialGradient>
+    <radialGradient id="mT" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#2ee6c9" stop-opacity="0.6"/><stop offset="1" stop-color="#2ee6c9" stop-opacity="0"/></radialGradient>
+
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#5eead4"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f9a8d4"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0; 1 0; 0 0" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#f9a8d4"/>
+    </linearGradient>
+
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="48"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.9 0.9 0.9 0 0"/></filter>
+
+    <style>
+      .sans { font-family:'Poppins','Segoe UI',ui-sans-serif,system-ui,sans-serif; }
+      .mono { font-family:'JetBrains Mono',ui-monospace,Menlo,monospace; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="340" rx="28" fill="url(#bg)"/>
+
+  <!-- morphing mesh gradient -->
+  <g filter="url(#blur)">
+    <ellipse cx="250" cy="120" rx="210" ry="170" fill="url(#mI)">
+      <animate attributeName="rx" values="210;250;210" dur="13s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; 50 30; 0 0" dur="15s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="820" cy="230" rx="230" ry="180" fill="url(#mP)">
+      <animate attributeName="ry" values="180;150;180" dur="12s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0; -40 -30; 0 0" dur="17s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="560" cy="70" rx="190" ry="150" fill="url(#mT)">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 20 40; 0 0" dur="14s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- right-side orbit accent -->
+  <g transform="translate(830,168)" fill="none">
+    <circle r="40" stroke="#ffffff" stroke-opacity="0.08"/>
+    <circle r="70" stroke="#ffffff" stroke-opacity="0.07"/>
+    <circle r="100" stroke="#ffffff" stroke-opacity="0.05"/>
+    <circle r="70" stroke="url(#flow)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="70 370" opacity="0.9">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="9" fill="url(#flow)"><animate attributeName="r" values="8;11;8" dur="3s" repeatCount="indefinite"/></circle>
+    <circle r="4" fill="#f9a8d4"><animateMotion dur="6s" repeatCount="indefinite" path="M0,-70 a70,70 0 1,1 -0.1,0"/></circle>
+    <circle r="3" fill="#5eead4"><animateMotion dur="10s" repeatCount="indefinite" path="M0,100 a100,100 0 1,1 0.1,0"/></circle>
+  </g>
+
+  <!-- editorial copy (left) -->
+  <text x="70" y="96" class="mono" font-size="13" letter-spacing="5" fill="#8f88c4">HELLO — I&#8217;M</text>
+  <text x="68" y="162" class="sans" font-size="62" font-weight="800" fill="url(#flow)">Manas Pathak</text>
+  <text x="70" y="200" class="sans" font-size="18" fill="#c9c2ff">ML / AI Engineer &#8212; I build systems that learn, reason &amp; decide.</text>
+
+  <!-- self-drawing rule -->
+  <line x1="70" y1="222" x2="430" y2="222" stroke="url(#rule)" stroke-width="3" stroke-linecap="round" stroke-dasharray="360" stroke-dashoffset="360">
+    <animate attributeName="stroke-dashoffset" from="360" to="0" begin="0.4s" dur="1.4s" fill="freeze"/>
+  </line>
+
+  <!-- chips -->
+  <g class="sans" font-size="13">
+    <g><rect x="70"  y="248" width="216" height="32" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.10"/><text x="178" y="269" text-anchor="middle" fill="#c4b5fd">LLM &amp; Multi-Agent Systems</text></g>
+    <g><rect x="298" y="248" width="152" height="32" rx="16" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.10"/><text x="374" y="269" text-anchor="middle" fill="#f9a8d4">300+ PyPI installs</text></g>
+  </g>
+
+  <!-- film grain overlay -->
+  <rect width="1000" height="340" rx="28" filter="url(#grain)" opacity="0.06"/>
+</svg>

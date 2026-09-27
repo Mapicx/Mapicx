@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-label="Selected work">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e0a24"/><stop offset="0.5" stop-color="#140b2e"/><stop offset="1" stop-color="#0b1030"/></linearGradient>
+    <radialGradient id="mI" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#6d5cff" stop-opacity="0.55"/><stop offset="1" stop-color="#6d5cff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="mP" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff5c9d" stop-opacity="0.45"/><stop offset="1" stop-color="#ff5c9d" stop-opacity="0"/></radialGradient>
+    <radialGradient id="mT" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#2ee6c9" stop-opacity="0.4"/><stop offset="1" stop-color="#2ee6c9" stop-opacity="0"/></radialGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect"><stop offset="0" stop-color="#5eead4"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f9a8d4"/><animateTransform attributeName="gradientTransform" type="translate" values="0 0; 1 0; 0 0" dur="9s" repeatCount="indefinite"/></linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="55"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.9 0.9 0.9 0 0"/></filter>
+    <style>.sans{font-family:'Poppins','Segoe UI',ui-sans-serif,system-ui,sans-serif;} .mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;}</style>
+  </defs>
+
+  <rect width="1000" height="560" fill="url(#bg)"/>
+  <g filter="url(#blur)">
+    <ellipse cx="200" cy="120" rx="220" ry="180" fill="url(#mI)"><animateTransform attributeName="transform" type="translate" values="0 0; 40 30; 0 0" dur="16s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="850" cy="440" rx="240" ry="190" fill="url(#mP)"><animateTransform attributeName="transform" type="translate" values="0 0; -40 -20; 0 0" dur="18s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="560" cy="300" rx="200" ry="160" fill="url(#mT)"><animateTransform attributeName="transform" type="translate" values="0 0; 20 -40; 0 0" dur="15s" repeatCount="indefinite"/></ellipse>
+  </g>
+
+  <text x="60" y="64" class="mono" font-size="13" letter-spacing="5" fill="#8f88c4">WHAT I&#8217;VE SHIPPED</text>
+  <text x="58" y="108" class="sans" font-size="40" font-weight="800" fill="url(#flow)">Selected Work</text>
+
+  <!-- CARD 1: TimeForge -->
+  <g>
+    <rect x="60" y="150" width="440" height="185" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.10"/>
+    <rect x="84" y="178" width="5" height="46" rx="2.5" fill="#5eead4"/>
+    <text x="476" y="192" text-anchor="end" class="mono" font-size="12" fill="#6f6a9c">01</text>
+    <text x="104" y="200" class="sans" font-size="21" font-weight="700" fill="#f4f2ff">TimeForge</text>
+    <text x="104" y="234" class="sans" font-size="13" fill="#b4ace0">Transformer model for GNSS clock-bias &amp; orbit-error</text>
+    <text x="104" y="254" class="sans" font-size="13" fill="#b4ace0">prediction. React + Three.js 3D dashboard + LLM agent.</text>
+    <text x="104" y="306" class="mono" font-size="12" fill="#5eead4">PyTorch &#183; Three.js &#183; LangChain &#183; Gemini</text>
+  </g>
+
+  <!-- CARD 2: Mapicx -->
+  <g>
+    <rect x="520" y="150" width="440" height="185" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.10"/>
+    <rect x="544" y="178" width="5" height="46" rx="2.5" fill="#a78bfa"/>
+    <text x="936" y="192" text-anchor="end" class="mono" font-size="12" fill="#6f6a9c">02</text>
+    <text x="564" y="200" class="sans" font-size="21" font-weight="700" fill="#f4f2ff">Mapicx  <tspan class="mono" font-size="12" fill="#8f88c4">300+ installs</tspan></text>
+    <text x="564" y="234" class="sans" font-size="13" fill="#b4ace0">A deep-learning framework built from scratch in NumPy —</text>
+    <text x="564" y="254" class="sans" font-size="13" fill="#b4ace0">autodiff, layers, 96.7% on the spiral benchmark.</text>
+    <text x="564" y="306" class="mono" font-size="12" fill="#a78bfa">Python &#183; NumPy &#183; PyPI</text>
+  </g>
+
+  <!-- CARD 3: MapR1 -->
+  <g>
+    <rect x="60" y="360" width="440" height="185" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.10"/>
+    <rect x="84" y="388" width="5" height="46" rx="2.5" fill="#f9a8d4"/>
+    <text x="476" y="402" text-anchor="end" class="mono" font-size="12" fill="#6f6a9c">03</text>
+    <text x="104" y="410" class="sans" font-size="21" font-weight="700" fill="#f4f2ff">MapR1</text>
+    <text x="104" y="444" class="sans" font-size="13" fill="#b4ace0">Autonomous multi-agent simulator. LLM agents strategize,</text>
+    <text x="104" y="464" class="sans" font-size="13" fill="#b4ace0">form alliances &amp; spawn emergent worlds from one prompt.</text>
+    <text x="104" y="516" class="mono" font-size="12" fill="#f9a8d4">LLMs &#183; SQLAlchemy &#183; Supabase</text>
+  </g>
+
+  <!-- CARD 4: BEACON -->
+  <g>
+    <rect x="520" y="360" width="440" height="185" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.10"/>
+    <rect x="544" y="388" width="5" height="46" rx="2.5" fill="#8b9bff"/>
+    <text x="936" y="402" text-anchor="end" class="mono" font-size="12" fill="#6f6a9c">04</text>
+    <text x="564" y="410" class="sans" font-size="21" font-weight="700" fill="#f4f2ff">BEACON  <tspan class="mono" font-size="12" fill="#8f88c4">SIH Finalist</tspan></text>
+    <text x="564" y="444" class="sans" font-size="13" fill="#b4ace0">Policy-intelligence platform for scalable document</text>
+    <text x="564" y="464" class="sans" font-size="13" fill="#b4ace0">intelligence with role-based access control.</text>
+    <text x="564" y="516" class="mono" font-size="12" fill="#8b9bff">RAG &#183; pgvector &#183; FastAPI &#183; RBAC</text>
+  </g>
+
+  <rect width="1000" height="560" filter="url(#grain)" opacity="0.06"/>
+</svg>
