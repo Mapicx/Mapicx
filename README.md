@@ -42,8 +42,8 @@
 
 <!-- ░░░░░░░░  TELEMETRY (dynamic — transparent bg to blend)  ░░░░░░░░ -->
 <p align="center">
-  <img height="158" src="https://github-readme-stats.vercel.app/api?username=Mapicx&show_icons=true&hide_border=true&count_private=true&title_color=a78bfa&icon_color=5eead4&text_color=c9c2ff&bg_color=00000000"/>
-  <img height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=Mapicx&hide_border=true&background=00000000&ring=f9a8d4&fire=f9a8d4&currStreakLabel=a78bfa&sideNums=c9c2ff&sideLabels=8f88c4&dates=6f6a9c&stroke=a78bfa"/>
+  <img height="158" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Mapicx&show_icons=true&hide_border=true&count_private=true&title_color=a78bfa&icon_color=5eead4&text_color=c9c2ff&bg_color=00000000"/>
+  <img height="158" src="https://streak-stats.demolab.com?user=Mapicx&hide_border=true&background=00000000&ring=f9a8d4&fire=f9a8d4&currStreakLabel=a78bfa&sideNums=c9c2ff&sideLabels=8f88c4&dates=6f6a9c&stroke=a78bfa"/>
 </p>
 
 <p align="center">
